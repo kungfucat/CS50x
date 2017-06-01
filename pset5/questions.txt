@@ -1,0 +1,26 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis is the longest word in the dictionary.
+1.  getrusage gets the resource usage. It returns resource usage manners for one of its formal parameters 'who'. 
+The resource usage is returned in the structure pointed to by its second parameter 'usage'.
+2.  struct reusage has 16 members.
+3.  We passed before and after by reference and not by value. Interesting. If they are passed by value, a copy of them will be 
+created by functions, thus consuming extra space.To avoid that, they are passed by reference and the function operates on them,
+without wasting additional memory. 
+4.  In the for() loop, we run through each character, reading them from the dictionary. Then we check whether the given
+character is an apostrophe or alphabet, if it is so, then we add it to an array of characters(strings) . If we somehow travel 
+a word whose length is greater than the length of the longest word, we simply go over on them with the while() loop without 
+doing anything. If we stumble upon a digit, we run through this again. If we get any other character, we know that we have
+reached the end of the word. So we put a '\0' at the end of that array and +1, the number of words. Quite interesting.
+5.  We didn't use fscanf(), because we want to work on individual characters. If we used it, we would have to open, 
+the string again using a loop, and get each character seperately. Quite some work. So it would be better if we directly 
+read each character from the file using fgetc().
+6.  To prevent any accidental changes, its better to declare them as constants.
+7.  I chose trie to implement the dictionary. In each node, there is an array of pointers, children[27]. Each element of 
+that pointer points to another 27 byte long block of memory, which represents the next character of the word. Node also 
+contains a boolean value, is_word denoting whether the given  character is the end of the word or not. This helps in managing 
+substrings very efficiently, instead of extra 27 character long memory, we simply change the boolean value of is_word to true.
+8.  Code was pretty fast for being the first implementation. Although trie, consumes a lot of memory, is quite fast.
+9.  No changes of high magnitude. A small number of tweaks here and there were made.
+10. On comparing the time with staff's solution, I spent the same time in check() and size() function but in load() and 
+unload() i took a bit longer for that. 
+My code contained a lot of NULL pointers, which can be overcome by knowing the words in a dictionary before hand. This will
+reduce time in load() and unload() functions.

@@ -1,0 +1,28 @@
+0.  BMP - 32 bits thus support (256^4) colours=419430400
+    GIF - 8 bits thus support (256^1) colours=256
+    JPEG- 24 bit thus support (256^3) colours=1638400
+    PNG - 24 bit thus support(256^3) colours=1638400
+1.  GIF supports animation.
+2.  lossy means loss of information of the image and if the image is stored exactly(quality of image is  same on 
+compression and depression), its called lossless.
+3.  JPEG is lossy-compressed.
+4.  When a file  is deleted in FAT, meta-data that is pointed to the file, is rewritten whereas the disk block containing
+the file's content are still there.
+5.  By using a data destruction software, that can overwrite the disk data so many times that it is nearly impossible to
+recover data.
+8.  BYTE- 1 byte
+    DWORD- 4 bytes
+    LONG- 4 bytes
+    WORD- 2 bytes
+9.  In ASCII- BM (stands for bitmap)
+    In hexadecimal- 0x42 0x4D
+10. bfsize is the size of the bitmap file (in bytes).
+    bisize is the size of the strcuture in file (in bytes).
+11. When biHeight is negative, bitmap is top-down.(just like in coordinate system as for y=negative, graph lies in 3rd-4th quadrants)
+12. biBitCount specifies BMP's color depth.
+13. It will return null, when the file is not created (as operating system  may be out of memory) or there was some error.
+14. It represents the numbers of triple we read at a time.
+15. 3*3=9 bytes. Now we need it to 3 bytes to make it a multiple of 4 and bring it to the next scanline. Thus answer is 3.
+16. fseek is used to set the position indicator of the file.
+17. It shows the current position of the position indicator of the file.
+18. The guy is actually Rick Astley, thanks to David's week 7 lecture video at 23:22.

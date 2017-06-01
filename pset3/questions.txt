@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. It allows a minimum of 3x3 and a maximum of 9x9 board.
+1. The game's board is represented by a two-dimensional array.
+2. greet() function is used to greet the player at the game's start.
+3. We need to implement init(),draw(),move() and won() functions.
